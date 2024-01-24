@@ -1,7 +1,29 @@
 <template>
-  
+  <div >{{ activity }} </div>
 </template>
-<script setup>
+<script>
+
+export default{  
+    props:{
+        activity:String
+    },
+    setup(){
+        
+        
+        return{
+            
+        }
+    },
+ 
+    
+    
+
+    
+    // const activity = ref(props.activity)
+
+   
+}
+
 
 </script>
 

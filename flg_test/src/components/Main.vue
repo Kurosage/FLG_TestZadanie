@@ -1,12 +1,33 @@
 <template>
-  
+  <div class="card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
 </template>
-<script setup>
-
+<script>
+import MainCard from "./MainCard.vue"
+export default{
+    name: "main",
+    components: {
+        MainCard
+    },
+}
+    
 </script>
 
 
 
 <style scoped>
-
+.card{
+    display: grid;
+    /* Автоматически заполняем на всю ширину grid-контейнера */
+    background-color: grey;
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    max-width: 1000px; /* Ширина grid-контейнера */
+    justify-content: center;
+    justify-items: center; /* Размещаем карточку по центру */
+    column-gap: 30px; /* Отступ между колонками */
+    row-gap: 40px; /* Отступ между рядами */
+    margin: 0 auto;
+}
 </style>
