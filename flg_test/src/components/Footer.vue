@@ -30,5 +30,13 @@ export default{
 
 
 <style scoped>
-
+div{
+    
+    color:black;
+    /* padding-left:30px; */
+    
+    font-family:"Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
 </style>

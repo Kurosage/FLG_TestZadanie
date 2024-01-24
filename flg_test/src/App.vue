@@ -1,10 +1,10 @@
 
 <template>
-   
-    <Head></Head>
-    <Main></Main>
-    <Footer :activity="activity" class="footer"></Footer>
-    
+    <div class="body">
+        <Head class="head"></Head>
+        <Main class="main"></Main>
+        <Footer :activity="activity" class="footer"></Footer>
+    </div>
 </template>
 <script>
 import Head from "./components/Head.vue";
@@ -51,18 +51,27 @@ export default {
 
 
 <style scoped>
-
-.footer{
-    background-color:rgb(144, 156, 189);
-    color:black;
-    width:100%;
-    position:fixed;
-    right:0;
-    bottom:0;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    font-size: 25px;
-    font-weight: bold;
+.body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #c2cdec;
+    flex-direction: column;
 }
+
+.head,
+.footer {
+    height: 30px;
+    
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    
+    text-align: center;
+    padding: 0 0 15px 15px;
+    background-color: rgb(86, 143, 182);
+    width: 100%;
+}
+
 </style>

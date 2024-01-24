@@ -10,19 +10,19 @@
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-
-.head{
-    position: fixed;
-    top:0;
-    right: 0;
+ .head{
+    width:100%;
+    padding: 15px 0;
+    margin: 0  auto;
+}
+label{
+ 
+    float:left;
     color:black;
-    background-color: grey;
+    padding-left:30px;
+    
     font-family:"Oswald", sans-serif;
-    padding-top: 10px;
-    padding-left: 30px;
     font-weight: bold;
-
-    width: 100%;
-    height: 5%;
+    font-size: 25px;
 }
 </style>
